@@ -1,0 +1,16 @@
+<h1>Contact us on 777-888-9999</h1>
+
+<p>Know more about us <%= link_to "About us", about_path %>
+</p>
+
+<h3>
+  Who do you want to contact
+</h3>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+<p>
+  <%= @member %>
+</p>
